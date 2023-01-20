@@ -65,14 +65,14 @@ collections_dir: my_collections
 collections:
   about:
     output: false
-  services: 
+  treatments: 
         output: true
-        layout: stam
+        layout: home
 
 
 defaults:
   - scope:
       path: ""
-      type: "services"
+      type: "treatments"
     values: 
-      layout: "service"
+      layout: "treatment"
