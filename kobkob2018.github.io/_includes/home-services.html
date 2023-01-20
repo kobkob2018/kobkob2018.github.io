@@ -1,0 +1,12 @@
+<div class="inner-section home-services">
+    <h2>
+        langueges and services
+    </h2>
+    <div class="services items">
+        {% for service in site.services %}
+        
+            <a class="service item grow" href="{{service.permalink}}" title="{{service.title}}">{{service.title}}</a>
+        
+        {% endfor %}
+    </div>
+</div>

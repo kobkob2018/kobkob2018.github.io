@@ -1,0 +1,46 @@
+---
+layout: post
+---
+
+{% if page.price %}
+    {% assign service_price = page.price %}
+    {% assign has_price_section = 'yes' %}
+{% endif %}
+
+{% if page.time %}
+    {% assign service_time = page.time %}
+    {% assign has_price_section = 'yes' %}
+{% endif %}
+
+
+{% if has_price_section %}
+  <div class="price-section">
+      {% if service_price %}
+        <div class="price item">
+            מחיר: {{service_price}} ש"ח
+        </div>
+      {% endif %}
+      {% if service_time %}
+        <div class="time item">
+            זמן הטיפול: {{service_time}} דקות
+        </div>
+      {% endif %}      
+  </div>
+{% endif %}
+<div class="post-content service-content">
+    {% if page.img %}
+        <div class="content-img">
+            <img src="assets/images/services/{{page.img}}" alt="{{page_title}}" />
+        </div>
+    {% endif %}
+    <div class="content-text">
+        {{content}}
+    </div>
+</div>
+{% include phone-contact.html %}
+<div class="next-prev">
+    {% include next-prev.html collection = "services" %}
+</div>
+<div class="all-services-link">
+    <a href="service-menu" title="תפריט הטיפולים המלא">לתפריט הטיפולים המלא</a>
+</div>
