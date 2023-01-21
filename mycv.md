@@ -3,9 +3,6 @@
 layout: page
 ---
 
-# My CV 
-
-.
 
 ### KOBI AVRAHAM – Web Developer yacov.avr@gmail.com | +972-542393397 | Linkedin
 
