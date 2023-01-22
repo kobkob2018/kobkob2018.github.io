@@ -52,21 +52,6 @@ title: News
     });
   });
 
-
-
-  news_posts.forEach(newpost => {
-    if(newpost.slag == 'none'){
-      return;
-    }
-    fetch('https://dev.to/api/articles/'+newpost.user+'/'+newpost.slag)
-      .then((res) => res.json())
-      .then(article => {
-        console.log(article);
-        ... //code goes here
-    });
-  });
-
-
 </script>
 <div id="articles_placeholder" class = "dev-to-articles">
 
