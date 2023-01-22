@@ -60,7 +60,7 @@ title: News
 
 <div id="apitoui_template" class = "apitoui-template" style="display:none">
   <div class = "news-post-template" >
-    <a href = "#" target = "_NEW" class = "news-post-link-to" >
+    <a href = "#" target = "_BLANK" class = "news-post-link-to" >
       <div class = "news-post-wrap" >
             <div class="post-left-side">
               <img class = "img-placeholder" src = "" alt = "" />
