@@ -373,6 +373,46 @@ a.whatsapp-link{
     }
 }
 
+.news-post-template a.news-post-link-to:hover{
+    text-decoration: none;
+}
+
+.news-post-wrap{
+    display: flex;
+    background: white;
+    border: 1px solid gray;
+    margin: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px grey;
+    color: black;
+    max-width: 700px;
+    
+    .post-left-side{
+        margin: 10px;
+        margin-right: 20px;
+        width: 70px;
+        img{
+            border-radius: 50%;
+            width: 65px;
+        }
+    }
+    h4{
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 18px;
+        padding-top: 12px;
+    }
+    .post-description{
+        font-size: 14px;
+        line-height: 14px;
+        padding: 0px 14px;
+    }
+    .small-details{
+        font-weight: bold;
+    }
+}
+
 .services-menu-t{
     width:90%;
     margin: 50px auto;
